@@ -1,0 +1,42 @@
+{
+  "name": "material-design-icons-for-angular-ant-design",
+  "version": "1.0.1",
+  "description": "Material Icons for Angular Ant Design",
+  "main": "dist/icons/public.js",
+  "repository": "https://github.com/thanhtunguet/material-design-icons-for-angular-ant-design.git",
+  "author": {
+    "name": "Thanh Tùng",
+    "email": "ht@thanhtunguet.info",
+    "url": "https://thanhtunguet.info"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@angular/common": "^8.2.13",
+    "@angular/compiler": "^8.2.13",
+    "@angular/compiler-cli": "^8.2.13",
+    "@angular/core": "^8.2.13",
+    "@angular/platform-browser": "^8.2.13",
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
+    "handlebars": "^4.5.1",
+    "jest": "^24.9.0",
+    "lodash": "^4.17.15",
+    "ng-packagr": "^5.7.1",
+    "rxjs": "^6.5.3",
+    "tslint": "^5.20.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "~3.5.3",
+    "@ant-design/icons-angular": "^8.1.1"
+  },
+  "scripts": {
+    "watch": "tsc -w -p tsconfig.transform.json",
+    "build": "ng-packagr -p package.json",
+    "transform": "node ./dist/src/transform.js"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "./icons/public.ts"
+    }
+  }
+}
